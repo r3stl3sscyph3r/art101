@@ -19,3 +19,12 @@ function main() {
 
 // let's get this party started
 main();
+
+//Simple game outline
+  //Start 
+    //Decide the order of turns
+      //Create and display a 3x3 grid
+        //Assign players an 'x' or 'o'
+          //Make is so players can place markers on the board 
+            //Make it so players cannot place their marker on a filled spot
+                
