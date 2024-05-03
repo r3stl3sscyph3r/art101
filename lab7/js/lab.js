@@ -19,4 +19,4 @@ function sortUserName() {
 
     return nameSorted;
 }
-document.writeln("hah"+ nameSorted + "<br>");
+document.writeln("hah"+ sortUserName() + "<br>");
