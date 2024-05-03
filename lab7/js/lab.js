@@ -6,7 +6,8 @@
 function sortUserName() {
 
     var userName = window.prompt("Username:");
-    userName = userName.trim();
+    //ignore or omit spaces
+    var userName = userName.trim('');
     console.log("username= ",userName);
 
     var splitName = userName.split('');
