@@ -6,9 +6,13 @@
 function sortUserName() {
 
     var userName = window.prompt("Username:");
-    console.log("Username= " + userName);
 
-    var sortedName = userName.split('').sort.join('');
-    console.log(sortedName);
+    var splitName = userName.split('');
+    
+    var sortName = splitName.sort();
 
+    var nameSorted = sortName.join('');
+
+    return nameSorted;
 }
+document.writeln("hah"+ nameSorted + "<br>");
