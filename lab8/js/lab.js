@@ -14,9 +14,10 @@ console.log("3 squared: ",squareIt(3));
 array = [5,3,7,25,32]
 console.log("my array: ",array);
 
-array.map(squareIt);
+var result = array.map(squareIt);
+console.log("squared array: ", result);
 
-array.map(function(x){
+var result = array.map(function(x){
     return x + 2;
 })
 
