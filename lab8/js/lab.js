@@ -17,7 +17,7 @@ var square = array.map(squareIt);
 console.log("squared array: ", square);
 
 var add = array.map(function(x){
-    return x + 2;
+    return x + x;
 })
 
 var mapResults = array.map(squareIt);
