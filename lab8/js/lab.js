@@ -16,7 +16,7 @@ console.log("my array: ",array);
 var square = array.map(squareIt);
 console.log("squared array: ", square);
 
-var result = array.map(function(x){
+var add = array.map(function(x){
     return x + 2;
 })
 
@@ -24,9 +24,9 @@ var mapResults = array.map(squareIt);
 console.log("Results: ", mapResults);
 
  // Your map results data
- var display = array;
+ //var display = array;
 
  // Use jQuery to select the element by its ID and set the HTML content
- $("#output").html("Original array:", display);
+ $("#output").html("Original array:", array);
  
  
