@@ -16,12 +16,12 @@ console.log("my array: ",array);
 var square = array.map(squareIt);
 console.log("squared array: ", square);
 
-var add = array.map(function(x){
+var add = array.map(function different(x){
     var again = x + x;
     return again;
 })
 
-var mapResults = array.map(squareIt);
+var mapResults = array.map(different);
 console.log("Results: ", mapResults);
 
  // Your map results data
