@@ -24,9 +24,9 @@ var mapResults = array.map(squareIt);
 console.log("Results: ", mapResults);
 
  // Your map results data
- var display = array;
+ var mapResults = array;
 
  // Use jQuery to select the element by its ID and set the HTML content
- $("#output").html("Original array:", display);
+ $("#output").html("Original array:", mapResults);
  
  
