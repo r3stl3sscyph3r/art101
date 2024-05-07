@@ -8,10 +8,11 @@ function squareIt(x){
     return result;
 }
 
-console.log(squareIt(5));
-console.log(squareIt(3));
+console.log("5 squared: ",squareIt(5));
+console.log("3 squared: ",squareIt(3));
 
 array = [5,3,7,25,32]
+console.log("my array: ",array);
 
 array.map(squareIt);
 
@@ -20,4 +21,4 @@ array.map(function(x){
 })
 
 var mapResults = array.map(squareIt);
-console.log("Results: ", mapResults)
+console.log("Results: ", mapResults);
