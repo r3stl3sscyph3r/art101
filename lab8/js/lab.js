@@ -2,7 +2,6 @@
 // Author: salem hunstable
 // Date: 5/06/24
 
-    //function
 function squareIt(x){
     var result = x * x;
     return result;
