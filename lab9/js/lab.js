@@ -8,8 +8,6 @@
 */
 // add button to challenge section
 $("#challenge").append("<button id='button-challenge'>Make Special</button>");
-$("#problems").append("<button id='button-problems'>Make Special</button>");
-$("#results").append("<button id='button-results'>Make Special</button>");
 
 $("#button-challenge").click(function(){
     // Toggle the "special" class for the challenge section
