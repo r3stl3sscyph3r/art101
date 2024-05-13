@@ -7,18 +7,27 @@
    Date: 2023
 */
 
-// Add click listeners to the buttons
-$("#button-challenge").click(function(){
-    // Toggle the "special" class for the challenge section
-    $("#challenge").toggleClass("special");
-});
 
-$("#button-problems").click(function(){
-    // Toggle the "special" class for the problems section
-    $("#problems").toggleClass("special");
-});
+// Add buttons to challenge, problems, and results sections
+function pretty(){
+    $("#challenge").toggleClass("special")
+  }
+  //click button
+  $("#button-challenge").click(pretty)
+  
 
-$("#button-results").click(function(){
-    // Toggle the "special" class for the results section
-    $("#results").toggleClass("special");
-});
+  function prettyProblem(){
+    $("#problems").toggleClass("special")
+  }
+  //click button
+  $("#button-problems").click(prettyProblem)
+
+
+  function prettyResults(){
+    $("#results").toggleClass("special")
+  }
+  //click button
+  $("#button-results").click(prettyResults)
+    
+
+
