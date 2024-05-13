@@ -14,7 +14,9 @@ border: solid 1px #7e3c45;
 background-color: #1f131c;
 color: #c9a3b9;
 }
-.car-photo {
-  margin: 10px;
-  max-width: 500px;
+.special {
+  background-color: lavender;
+  border: dotted 50px  #1f131c;
+  color: pink;
+  font-weight: bold;
 }

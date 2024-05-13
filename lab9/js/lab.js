@@ -1,24 +1,16 @@
-// index.js - lab 8
-// Author: salem hunstable
-// Date: 5/06/24
+/*
+   lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
 
-function squareIt(x){
-    return x * x;
-}
+   Requirements: jQuery must be loaded for this script to work.
 
-console.log("5 squared: ",squareIt(5));
-console.log("3 squared: ",squareIt(3));
+   Author: Salem
+   Date: 2023
+*/
+// add button to challenge section
+$("#challenge").append("<button id='button-challenge'>Make Special</button>");
 
-array = [5,3,7,25,32]
-console.log("my array: ",array);
-
-var result = array.map(squareIt);
-console.log("squared array: ", result);
-
-var result = array.map(function(x){
-    return x*2;
-})
-console.log("array again: ", result); 
-
-
-
+// add a click listener to the challenge button
+$("button-challenge").click(function(){
+    // now add (or subtract) the "special" class to the section
+    $("#challenge").toggleClass("special");
+});
