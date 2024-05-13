@@ -16,18 +16,4 @@ function pretty(){
   $("#button-challenge").click(pretty)
   
 
-  function prettyProblem(){
-    $("#problems").toggleClass("special")
-  }
-  //click button
-  $("#button-problems").click(prettyProblem)
-
-
-  function prettyResults(){
-    $("#results").toggleClass("special")
-  }
-  //click button
-  $("#button-results").click(prettyResults)
-    
-
 
