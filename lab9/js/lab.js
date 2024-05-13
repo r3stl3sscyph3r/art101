@@ -15,13 +15,3 @@ $("#button-challenge").click(function(){
     // Toggle the "special" class for the challenge section
     $("#challenge").toggleClass("special");
 });
-
-$("#button-problems").click(function(){
-    // Toggle the "special" class for the problems section
-    $("#problems").toggleClass("special");
-});
-
-$("#button-results").click(function(){
-    // Toggle the "special" class for the results section
-    $("#results").toggleClass("special");
-});
