@@ -6,10 +6,6 @@
    Author: Salem
    Date: 2023
 */
-// Add buttons to challenge, problems, and results sections
-$("#challenge").append("<button id='button-challenge'>Make Special</button>");
-$("#problems").append("<button id='button-problems'>Make Special</button>");
-$("#results").append("<button id='button-results'>Make Special</button>");
 
 // Add click listeners to the buttons
 $("#button-challenge").click(function(){
