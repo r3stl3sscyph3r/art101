@@ -8,7 +8,7 @@
 */
 
 
-// Add buttons to challenge, problems, and results sections
+// Add buttons to challenge
 
 $("#challenge").append("<button id='button-challenge'>Make Special</button>");
 

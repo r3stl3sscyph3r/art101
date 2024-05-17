@@ -14,7 +14,14 @@ border: solid 1px #7e3c45;
 background-color: #1f131c;
 color: #c9a3b9;
 }
-.car-photo {
-  margin: 10px;
-  max-width: 500px;
+.text p {
+  display: inline-block;
+  max-width: 60%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: darkgray;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8em;
 }

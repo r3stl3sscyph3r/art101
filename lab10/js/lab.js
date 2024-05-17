@@ -1,24 +1,29 @@
-// index.js - lab 8
-// Author: salem hunstable
-// Date: 5/06/24
+/*
+   lab.js - This simple JavaScript/jQuery script appends new elements to an output div
 
-function squareIt(x){
-    return x * x;
-}
+   Requirements: jQuery must be loaded for this script to work.
 
-console.log("5 squared: ",squareIt(5));
-console.log("3 squared: ",squareIt(3));
+   Author: sal
+   Date: 2023
+*/
 
-array = [5,3,7,25,32]
-console.log("my array: ",array);
+function generateRandomText() {
+    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    const min = 3;
+    const max = 100;
+    const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
+    // Get a random starting index to slice the Lorem Ipsum text
+    const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
+    // Generate the random Lorem Ipsum-like text
+    return text.slice(randStart, randStart + randLen);
+  }
 
-var result = array.map(squareIt);
-console.log("squared array: ", result);
+  // click listener for button
+$("#make-convo").click(function(){
+});
 
-var result = array.map(function(x){
-    return x*2;
-})
-console.log("array again: ", result); 
+// get new fake dialogue
+const newText = generateRandomText();
 
-
-
+// append a new div to our output div
+$("#output").append('<div class="text"><p>' + newText + '</p></div>');
