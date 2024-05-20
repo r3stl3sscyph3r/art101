@@ -2,23 +2,21 @@
 // Author: salem hunstable
 // Date: 5/06/24
 
-function squareIt(x){
-    return x * x;
-}
+// Sorts the characters of a string in alphabetical order.
+function sortString(inputString) {
+    // We have to convert our string to an array and back again to sort it
+    return inputString.split('').sort().join('');
+  }
 
-console.log("5 squared: ",squareIt(5));
-console.log("3 squared: ",squareIt(3));
+  // click listener for button
+$("#submit").click(function(){
+});
 
-array = [5,3,7,25,32]
-console.log("my array: ",array);
+// get value of input field
+const userName = $("#user-name").val();
 
-var result = array.map(squareIt);
-console.log("squared array: ", result);
+// now let's sort it
+userNameSorted = sortString(userName);
 
-var result = array.map(function(x){
-    return x*2;
-})
-console.log("array again: ", result); 
-
-
-
+// append a new div to our output div
+$("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
