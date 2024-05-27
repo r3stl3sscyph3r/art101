@@ -1,24 +1,32 @@
-// index.js - lab 8
+// index.js - lab 13
 // Author: salem hunstable
-// Date: 5/06/24
+// Date: 5/26/24
 
-function squareIt(x){
-    return x * x;
+function fizzBuzz() {
+    var output = "";
+
+    for (var i = 1; i <= 200; i++) {
+        var str = "";
+
+        if (i % 3 === 0) {
+            str += "Fizz";
+        }
+        if (i % 5 === 0) {
+            str += "Buzz";
+        }
+        if (i % 7 === 0) {
+            str += "Boom";
+        }
+
+        if (str === "") {
+            output += i + "<br>";
+        } else {
+            output += str + "!<br>";
+        }
+    }
+
+    $("#output").html(output);
 }
 
-console.log("5 squared: ",squareIt(5));
-console.log("3 squared: ",squareIt(3));
-
-array = [5,3,7,25,32]
-console.log("my array: ",array);
-
-var result = array.map(squareIt);
-console.log("squared array: ", result);
-
-var result = array.map(function(x){
-    return x*2;
-})
-console.log("array again: ", result); 
-
-
-
+// Call the function
+fizzBuzz();
