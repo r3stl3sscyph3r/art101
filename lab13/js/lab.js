@@ -3,30 +3,29 @@
 // Date: 5/26/24
 
 function fizzBuzz() {
-    var output = "";
-
+    var outputString = "";
     for (var i = 1; i <= 200; i++) {
-        var str = "";
-
-        if (i % 3 === 0) {
-            str += "Fizz";
-        }
-        if (i % 5 === 0) {
-            str += "Buzz";
-        }
-        if (i % 7 === 0) {
-            str += "Boom";
-        }
-
-        if (str === "") {
-            output += i + "<br>";
+        if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0) {
+            outputString += i + " FizzBuzzBoom!<br>";
+        } else if (i % 3 === 0 && i % 5 === 0) {
+            outputString += i + " FizzBuzz!<br>";
+        } else if (i % 3 === 0 && i % 7 === 0) {
+            outputString += i + " FizzBoom!<br>";
+        } else if (i % 5 === 0 && i % 7 === 0) {
+            outputString += i + " BuzzBoom!<br>";
+        } else if (i % 3 === 0) {
+            outputString += i + " Fizz!<br>";
+        } else if (i % 5 === 0) {
+            outputString += i + " Buzz!<br>";
+        } else if (i % 7 === 0) {
+            outputString += i + " Boom!<br>";
         } else {
-            output += str + "!<br>";
+            outputString += i + "<br>";
         }
     }
-
-    $("#output").html(output);
+    $("#output").html(outputString);
 }
 
-// Call the function
-fizzBuzz();
+$(document).ready(function() {
+    fizzBuzz();
+});
