@@ -1,24 +1,20 @@
-// index.js - lab 8
+// index.js - lab 15
 // Author: salem hunstable
-// Date: 5/06/24
-
-function squareIt(x){
-    return x * x;
-}
-
-console.log("5 squared: ",squareIt(5));
-console.log("3 squared: ",squareIt(3));
-
-array = [5,3,7,25,32]
-console.log("my array: ",array);
-
-var result = array.map(squareIt);
-console.log("squared array: ", result);
-
-var result = array.map(function(x){
-    return x*2;
-})
-console.log("array again: ", result); 
+// Date: 6/02/24
 
 
-
+$(document).ready(function() {
+    $('#activate').click(function() {
+        $.ajax({
+            url: "https://yesno.wtf/api",
+            type: "GET",
+            dataType: "json",
+            success: function(data) {
+                $('#output').text(data.answer);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log("Error:", textStatus, errorThrown);
+            }
+        });
+    });
+});
